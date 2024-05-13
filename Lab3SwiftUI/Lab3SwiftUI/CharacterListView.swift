@@ -9,26 +9,27 @@ import SwiftUI
 
 struct CharacterListView: View {
     
-    @ObservedObject var characterListViewModel: CharacterListViewModel
+    @ObservedObject var viewModel: CharacterListViewModel
     
     var body: some View {
-        
-        VStack{
-            List(characterListViewModel.characters){ character in
-                NavigationLink(destination:CharacterDetailView(character: character)){
-                    CharacterRowView(character : character)
-                }
-            }
-            if characterListViewModel.isLoading{
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle())
-                    .padding()
-            }
-        }
-        .onAppear{
-            characterListViewModel.fetchCharacters()
-        }
-        .navigationTitle("Personajes")
+           NavigationView {
+               List(viewModel.characters, id: \.id) { character in
+                   NavigationLink(destination: CharacterDetailView(viewModel: CharacterDetailViewModel(character: character))) {
+                       CharacterRowView(character: character)
+                   }
+               }
+               .navigationBarTitle("Personajes")
+               .onAppear {
+                   viewModel.fetchCharacters()
+               }
+           }
+       }
+   }
+
+struct CharacterListView_Previews: PreviewProvider {
+    static var previews: some View {
+        let viewModel = CharacterListViewModel()
+        return CharacterListView(viewModel: viewModel)
     }
 }
 
