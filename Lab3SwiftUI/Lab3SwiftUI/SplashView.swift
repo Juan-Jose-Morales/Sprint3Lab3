@@ -48,7 +48,7 @@ struct SplashView: View {
             
             .navigationBarHidden(true)
             .fullScreenCover(isPresented: $isActive){
-                CharacterListView()
+                CharacterListView(characterListViewModel: CharacterListViewModel())
             }
         }
         
