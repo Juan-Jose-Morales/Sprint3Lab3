@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct CharacterListView: View {
+    
+    @ObservedObject var characterListViewModel: CharacterListViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            List(characterListViewModel.characters){ character in
+                NavigationLink(destination:CharacterDetailView(character: character)){
+                    CharacterRowView(character : character)
+                }
+            }
+            if characterListViewModel.isLoading{
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+            }
+        }
+        .onAppear{
+            characterListViewModel.fetchCharacters()
+        }
+        .navigationTitle("Personajes")
     }
 }
 
-struct CharacterListView_Previews: PreviewProvider {
-    static var previews: some View {
-        CharacterListView()
-    }
-}
