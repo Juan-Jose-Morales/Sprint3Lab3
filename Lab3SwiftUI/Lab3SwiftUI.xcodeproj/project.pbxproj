@@ -19,7 +19,7 @@
 		901CABD42BF22B3500F7F42F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CABD32BF22B3500F7F42F /* CharacterDetailView.swift */; };
 		901CABD62BF22BC300F7F42F /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CABD52BF22BC300F7F42F /* CharacterRowView.swift */; };
 		901CABE12BF3E07F00F7F42F /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CABE02BF3E07F00F7F42F /* CharacterDetailViewModel.swift */; };
-		901CABE32BF3E15C00F7F42F /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CABE22BF3E15C00F7F42F /* CharactersResponse.swift */; };
+		901CABE52BF3E27400F7F42F /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CABE42BF3E27400F7F42F /* CharactersResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		901CABD32BF22B3500F7F42F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		901CABD52BF22BC300F7F42F /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
 		901CABE02BF3E07F00F7F42F /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
-		901CABE22BF3E15C00F7F42F /* CharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
+		901CABE42BF3E27400F7F42F /* CharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				901CABC22BEBEA1800F7F42F /* Character.swift */,
-				901CABE22BF3E15C00F7F42F /* CharactersResponse.swift */,
+				901CABE42BF3E27400F7F42F /* CharactersResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,9 +213,9 @@
 				901CABC12BEBE9D800F7F42F /* CharacterListViewModel.swift in Sources */,
 				901CABCB2BF2237000F7F42F /* DataManager.swift in Sources */,
 				901CABBF2BEBE9A400F7F42F /* CharacterListView.swift in Sources */,
+				901CABE52BF3E27400F7F42F /* CharactersResponse.swift in Sources */,
 				901CABC32BEBEA1800F7F42F /* Character.swift in Sources */,
 				901CABB12BEBE8AA00F7F42F /* Lab3SwiftUIApp.swift in Sources */,
-				901CABE32BF3E15C00F7F42F /* CharactersResponse.swift in Sources */,
 				901CABE12BF3E07F00F7F42F /* CharacterDetailViewModel.swift in Sources */,
 				901CABC92BEC014000F7F42F /* SplashView.swift in Sources */,
 				901CABD62BF22BC300F7F42F /* CharacterRowView.swift in Sources */,
