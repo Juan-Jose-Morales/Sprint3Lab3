@@ -69,17 +69,11 @@
 		901CABAF2BEBE8AA00F7F42F /* Lab3SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				901CABB02BEBE8AA00F7F42F /* Lab3SwiftUIApp.swift */,
-				901CABBE2BEBE9A400F7F42F /* CharacterListView.swift */,
-				901CABD52BF22BC300F7F42F /* CharacterRowView.swift */,
-				901CABD32BF22B3500F7F42F /* CharacterDetailView.swift */,
-				901CABD72BF2391F00F7F42F /* CharacterDetailViewModel.swift */,
-				901CABC02BEBE9D700F7F42F /* CharacterListViewModel.swift */,
-				901CABC82BEC014000F7F42F /* SplashView.swift */,
-				901CABCA2BF2237000F7F42F /* DataManager.swift */,
-				901CABD12BF2252900F7F42F /* CharactersResponse.swift */,
-				901CABC22BEBEA1800F7F42F /* Character.swift */,
-				901CABB42BEBE8AC00F7F42F /* Assets.xcassets */,
+				901CABDA2BF3D20900F7F42F /* Models */,
+				901CABD92BF3D1E600F7F42F /* Views */,
+				901CABDC2BF3D23500F7F42F /* ViewModels */,
+				901CABDB2BF3D22200F7F42F /* Data */,
+				901CABDD2BF3D26A00F7F42F /* Resources */,
 				901CABB62BEBE8AC00F7F42F /* Preview Content */,
 			);
 			path = Lab3SwiftUI;
@@ -91,6 +85,52 @@
 				901CABB72BEBE8AC00F7F42F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		901CABD92BF3D1E600F7F42F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				901CABC82BEC014000F7F42F /* SplashView.swift */,
+				901CABBE2BEBE9A400F7F42F /* CharacterListView.swift */,
+				901CABD52BF22BC300F7F42F /* CharacterRowView.swift */,
+				901CABD32BF22B3500F7F42F /* CharacterDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		901CABDA2BF3D20900F7F42F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				901CABC22BEBEA1800F7F42F /* Character.swift */,
+				901CABD12BF2252900F7F42F /* CharactersResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		901CABDB2BF3D22200F7F42F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				901CABCA2BF2237000F7F42F /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		901CABDC2BF3D23500F7F42F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				901CABD72BF2391F00F7F42F /* CharacterDetailViewModel.swift */,
+				901CABC02BEBE9D700F7F42F /* CharacterListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		901CABDD2BF3D26A00F7F42F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				901CABB02BEBE8AA00F7F42F /* Lab3SwiftUIApp.swift */,
+				901CABB42BEBE8AC00F7F42F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
