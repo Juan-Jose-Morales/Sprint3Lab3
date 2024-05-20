@@ -11,10 +11,10 @@ import SwiftUI
 struct ImageModifier: ViewModifier {
     var width: CGFloat?
     var height: CGFloat?
-
+    
     func body(content: Content) -> some View {
         content
-            
+        
             .aspectRatio(contentMode: .fit)
             .frame(width: width, height: height)
             .clipShape(Circle())

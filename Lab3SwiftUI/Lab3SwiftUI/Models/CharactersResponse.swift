@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 struct CharactersResponse: Decodable {
     let info: Info
     let results: [Character]

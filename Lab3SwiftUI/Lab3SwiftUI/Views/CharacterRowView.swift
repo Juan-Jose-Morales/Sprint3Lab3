@@ -24,29 +24,29 @@ struct CharacterRowView: View {
     }
     private func loadImage(){
         guard let url = URL(string: character.image) else { return }
-                
-                isLoading = true
-                URLSession.shared.dataTask(with: url) { data, response, error in
-                    guard let data = data, let loadedImage = UIImage(data: data) else {
-                        isLoading = false
-                        return
-                    }
-                    
-                    DispatchQueue.main.async {
-                        isLoading = false
-                        image = loadedImage
-                    }
-                }.resume()
+        
+        isLoading = true
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, let loadedImage = UIImage(data: data) else {
+                isLoading = false
+                return
+            }
+            
+            DispatchQueue.main.async {
+                isLoading = false
+                image = loadedImage
+            }
+        }.resume()
     }
     
-   private func characterImageView() -> some View {
+    private func characterImageView() -> some View {
         Group{
             if let loadedImage = image {
                 Image(uiImage: loadedImage)
                     .resizable()
                     .applyImageModifiers(width: 50, height: 50)
                     .padding(.leading, 5)
-                    
+                
             } else if isLoading {
                 ProgressView()
                     .frame(width: 50, height: 50)
@@ -58,8 +58,8 @@ struct CharacterRowView: View {
                     .scaledToFit()
                     .padding(.leading, 5)
             }
-           }
         }
+    }
     
     func characterNameView() -> some View {
         Text(character.name)
