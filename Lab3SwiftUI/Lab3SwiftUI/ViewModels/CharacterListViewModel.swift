@@ -29,7 +29,7 @@ class CharacterListViewModel: ObservableObject{
                 self.characters = characters
                 self.errorMessage = nil
                 DispatchQueue.main.async {
-                self.objectWillChange.send()
+                    self.objectWillChange.send()
                 }
             } else if let error = error {
                 self.errorMessage = error.localizedDescription

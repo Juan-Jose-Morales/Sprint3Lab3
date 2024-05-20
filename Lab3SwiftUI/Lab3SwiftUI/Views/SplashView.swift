@@ -51,13 +51,13 @@ struct SplashView: View {
             .padding()
             .animation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true))
             .onAppear{
-            
+                
                 self.isAnimating = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                     self.isActive = true
+                }
+                
             }
-            
-        }
     }
 }
 struct SplashView_Previews: PreviewProvider {
