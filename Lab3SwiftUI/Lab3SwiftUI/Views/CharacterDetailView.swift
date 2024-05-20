@@ -65,8 +65,7 @@ struct CharacterDetailView: View {
             return AnyView(
                 Image(systemName: "photo")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity, maxHeight: 300)
+                    .applyImageModifiers(width: .infinity, height: 300)
             )
         }
     }

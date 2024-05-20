@@ -19,7 +19,7 @@ struct SplashView: View {
                     logoView()
                     Spacer()
                     animatedImage()
-                    Spacer()       
+                    Spacer()
                 }
             }
             .navigationBarHidden(true)
@@ -37,26 +37,22 @@ struct SplashView: View {
     private func logoView() -> some View {
         Image("Logo")
             .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 300, height: 300)
-            .padding()
+            .applyImageModifiers(width: 300, height: 300)
     }
     
     private func animatedImage()-> some View{
         Image("RickMorty")
             .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 300, height: 300)
+            .applyImageModifiers(width: 300, height: 300)
             .scaleEffect(isAnimating ? 1.2 : 1.0)
             .padding()
-            .animation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true))
-            .onAppear{
-                
-                self.isAnimating = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+            .onAppear {
+                withAnimation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
+                    self.isAnimating = true
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                     self.isActive = true
                 }
-                
             }
     }
 }

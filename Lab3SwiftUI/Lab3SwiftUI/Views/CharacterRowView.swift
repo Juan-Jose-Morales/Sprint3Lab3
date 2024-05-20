@@ -44,9 +44,7 @@ struct CharacterRowView: View {
             if let loadedImage = image {
                 Image(uiImage: loadedImage)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
+                    .applyImageModifiers(width: 50, height: 50)
                     .padding(.leading, 5)
                     
             } else if isLoading {
@@ -56,9 +54,7 @@ struct CharacterRowView: View {
             } else{
                 Image(systemName: "questionmark")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
+                    .applyImageModifiers(width: 50, height: 50)
                     .scaledToFit()
                     .padding(.leading, 5)
             }

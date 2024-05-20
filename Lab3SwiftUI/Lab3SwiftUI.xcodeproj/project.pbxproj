@@ -20,6 +20,7 @@
 		901CABD62BF22BC300F7F42F /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CABD52BF22BC300F7F42F /* CharacterRowView.swift */; };
 		901CABE12BF3E07F00F7F42F /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CABE02BF3E07F00F7F42F /* CharacterDetailViewModel.swift */; };
 		901CABE52BF3E27400F7F42F /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CABE42BF3E27400F7F42F /* CharactersResponse.swift */; };
+		901CAC422BFBC1FF00F7F42F /* ImageModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CAC412BFBC1FF00F7F42F /* ImageModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		901CABD52BF22BC300F7F42F /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
 		901CABE02BF3E07F00F7F42F /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		901CABE42BF3E27400F7F42F /* CharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
+		901CAC412BFBC1FF00F7F42F /* ImageModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		901CABAF2BEBE8AA00F7F42F /* Lab3SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				901CAC402BFBC1B900F7F42F /* Components */,
 				901CABDA2BF3D20900F7F42F /* Models */,
 				901CABD92BF3D1E600F7F42F /* Views */,
 				901CABDC2BF3D23500F7F42F /* ViewModels */,
@@ -131,6 +134,14 @@
 				901CABB42BEBE8AC00F7F42F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		901CAC402BFBC1B900F7F42F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				901CAC412BFBC1FF00F7F42F /* ImageModifiers.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				901CABBF2BEBE9A400F7F42F /* CharacterListView.swift in Sources */,
 				901CABE52BF3E27400F7F42F /* CharactersResponse.swift in Sources */,
 				901CABC32BEBEA1800F7F42F /* Character.swift in Sources */,
+				901CAC422BFBC1FF00F7F42F /* ImageModifiers.swift in Sources */,
 				901CABB12BEBE8AA00F7F42F /* Lab3SwiftUIApp.swift in Sources */,
 				901CABE12BF3E07F00F7F42F /* CharacterDetailViewModel.swift in Sources */,
 				901CABC92BEC014000F7F42F /* SplashView.swift in Sources */,
